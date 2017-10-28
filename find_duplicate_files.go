@@ -1,3 +1,4 @@
+// copyright Michael Usner - 2017
 package main
 
 import (
