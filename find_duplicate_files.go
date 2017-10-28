@@ -1,4 +1,11 @@
-// copyright Michael Usner - 2017
+// Copyright Michael Usner - 2017
+// Yes, comments are scarce - I'm still learning go.
+// The basic idea is:
+// Iterate all files in the folder and map by size.
+// Then, if there are multiple files that map to the same size, calculate the sha256 hash.
+// Any matching hashes are duplicates (with pretty high certainty).
+// We then ask the user if they want to keep the dupe.
+// TODO - I think I need to consider the possiblity of more than one dupe in my loop.
 package main
 
 import (
